@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-[assembly: InternalsVisibleTo("NameOfTestAssembly")]
+[assembly: InternalsVisibleTo("CalculatorTest")]
 
 namespace CalculatorDomain
 {
@@ -12,6 +12,11 @@ namespace CalculatorDomain
     {
         public SimpleCalculations()
         {
+        }
+
+        internal static void Add(int v1, int v2)
+        {
+            throw new NotImplementedException();
         }
     }
 }

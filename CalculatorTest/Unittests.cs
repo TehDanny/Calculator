@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-//using CalculatorDomain;
+using CalculatorDomain;
 
 namespace CalculatorTest
 {
@@ -10,6 +10,7 @@ namespace CalculatorTest
         [TestMethod]
         public void TestMethod1()
         {
+            SimpleCalculations.Add(5, 5);
         }
     }
 }
