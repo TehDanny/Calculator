@@ -6,9 +6,9 @@ namespace CalculatorTest
     [TestClass]
     public class Integrationtests
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+        //[TestMethod]
+        //public void TestMethod1()
+        //{
+        //}
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CalculatorDomain;
 
 namespace CalculatorUI
 {
@@ -23,6 +24,11 @@ namespace CalculatorUI
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            label.Content = SimpleCalculations.Add(2000000000, 2000000000);
         }
     }
 }

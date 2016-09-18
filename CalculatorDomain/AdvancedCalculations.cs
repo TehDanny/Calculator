@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CalculatorDomain
 {
-    public class AdvancedCalculations
+    public static class AdvancedCalculations
     {
     }
 }
