@@ -47,5 +47,48 @@ namespace CalculatorDomain
 
             return sum;
         }
+
+        internal static int Substract(int number1, int number2)
+        {
+            int sum = 0;
+
+            try
+            {
+                sum = checked(number1 - number2);
+            }
+            catch (OverflowException)
+            {
+                throw;
+            }
+
+            return sum;
+        }
+
+        internal static int Substract(List<int> numberList)
+        {
+            int sum = 0;
+            bool firstNumber = true;
+
+            if (numberList.Count == 0)
+                throw new ArgumentNullException();
+
+            foreach (var number in numberList)
+            {
+                if (firstNumber == true)
+                {
+                    sum = number;
+                    firstNumber = false;
+                }
+                else
+                    sum = checked(sum - number);
+            }
+
+            return sum;
+        }
+
+        internal static int Multiply(int number1, int number2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

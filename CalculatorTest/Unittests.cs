@@ -12,11 +12,13 @@ namespace CalculatorTest
         public void U_SimpleCalculations_Add_AllDataOk_SumReturned()
         {
             // arrange 
+            int number1 = 5;
+            int number2 = 5;
             int sum;
             int expectedResult = 10;
 
             // act
-            sum = SimpleCalculations.Add(5, 5);
+            sum = SimpleCalculations.Add(number1, number2);
 
             // assert
             Assert.AreEqual(sum, expectedResult);
@@ -27,10 +29,12 @@ namespace CalculatorTest
         public void U_SimpleCalculations_Add_Overflow_Exception()
         {
             // arrange 
+            int number1 = 2000000000;
+            int number2 = 2000000000;
             int sum;
 
             // act
-            sum = SimpleCalculations.Add(2000000000, 2000000000);
+            sum = SimpleCalculations.Add(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -76,6 +80,96 @@ namespace CalculatorTest
             sum = SimpleCalculations.Add(numberList);
 
             // assert is handled by the ExpectedException
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_Substract_AllDataOk_SumReturned()
+        {
+            // arrange 
+            int number1 = 8;
+            int number2 = 3;
+            int sum;
+            int expectedResult = 5;
+
+            // act
+            sum = SimpleCalculations.Substract(number1, number2);
+
+            // assert
+            Assert.AreEqual(sum, expectedResult);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void U_SimpleCalculations_Substract_Overflow_Exception()
+        {
+            // arrange 
+            int number1 = -2000000000;
+            int number2 = 2000000000;
+            int sum;
+
+            // act
+            sum = SimpleCalculations.Substract(number1, number2);
+
+            // assert is handled by the ExpectedException
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_Substract_List_AllDataOk_SumReturned()
+        {
+            // arrange 
+            List<int> numberList = new List<int> { 20, 5, 5 };
+            int sum;
+            int expectedResult = 10;
+
+            // act
+            sum = SimpleCalculations.Substract(numberList);
+
+            // assert
+            Assert.AreEqual(sum, expectedResult);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void U_SimpleCalculations_Substract_List_Overflow_Exception()
+        {
+            // arrange 
+            List<int> numberList = new List<int> { -1000000000, 1000000000, 1000000000 };
+            int sum;
+
+            // act
+            sum = SimpleCalculations.Substract(numberList);
+
+            // assert is handled by the ExpectedException
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void U_SimpleCalculations_Substract_List_EmptyList_Exception()
+        {
+            // arrange 
+            List<int> numberList = new List<int>();
+            int sum;
+
+            // act
+            sum = SimpleCalculations.Substract(numberList);
+
+            // assert is handled by the ExpectedException
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_Multiply_AllDataOK_SumReturned()
+        {
+            // arrange
+            int number1 = 3;
+            int number2 = 5;
+            int sum;
+            int expectedResult = 15;
+
+            // act
+            sum = SimpleCalculations.Multiply(number1, number2);
+
+            // assert
+            Assert.AreEqual(sum, expectedResult);
         }
     }
 }
