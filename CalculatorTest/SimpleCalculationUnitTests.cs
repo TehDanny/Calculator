@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace CalculatorTest
 {
     [TestClass]
-    public class Unittests
+    public class SimpleCalculationUnitTests
     {
         [TestMethod]
         public void U_SimpleCalculations_Add_Int_AllDataOk_SumReturned()

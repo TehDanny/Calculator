@@ -45,14 +45,17 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AdvancedCalculationUnitTests.cs" />
     <Compile Include="Integrationtests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unittests.cs" />
+    <Compile Include="SimpleCalculationUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalculatorDomain\CalculatorDomain.csproj">
