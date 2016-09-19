@@ -88,7 +88,18 @@ namespace CalculatorDomain
 
         internal static int Multiply(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int sum;
+
+            sum = checked(number1 * number2);
+
+            return sum;
+        }
+
+        internal static int Divide(int number1, int number2)
+        {
+            int sum = 0;
+
+            return sum;
         }
     }
 }

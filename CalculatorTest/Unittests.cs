@@ -171,5 +171,36 @@ namespace CalculatorTest
             // assert
             Assert.AreEqual(sum, expectedResult);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
+        public void U_SimpleCalculations_Multiply_Overflow_Exception()
+        {
+            // arrange 
+            int number1 = 1000000000;
+            int number2 = 1500000000;
+            int sum;
+
+            // act
+            sum = SimpleCalculations.Multiply(number1, number2);
+
+            // assert is handled by the ExpectedException
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_Divide_AllDataOK_SumReturned()
+        {
+            // arrange
+            int number1 = 25;
+            int number2 = 5;
+            int sum;
+            int expectedResult = 5;
+
+            // act
+            sum = SimpleCalculations.Divide(number1, number2);
+
+            // assert
+            Assert.AreEqual(sum, expectedResult);
+        }
     }
 }
