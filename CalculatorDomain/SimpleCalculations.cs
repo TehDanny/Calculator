@@ -95,9 +95,58 @@ namespace CalculatorDomain
             return sum;
         }
 
+        internal static int Multiply(List<int> numberlist)
+        {
+            int sum = 0;
+            bool firstNumber = true;
+
+            foreach (var number in numberlist)
+            {
+                if (firstNumber == true)
+                {
+                    sum = number;
+                    firstNumber = false;
+                }
+                else
+                    sum = sum * number;
+            }
+
+            return sum;
+        }
+
         internal static int Divide(int number1, int number2)
         {
             int sum = 0;
+
+            sum = number1 / number2;
+
+            return sum;
+        }
+
+        internal static double Divide(double number1, double number2)
+        {
+            double sum = 0;
+
+            sum = number1 / number2;
+
+            return sum;
+        }
+
+        internal static int Divide(List<int> numberList)
+        {
+            int sum = 0;
+            bool firstNumber = true;
+
+            foreach (var number in numberList)
+            {
+                if (firstNumber == true)
+                {
+                    sum = number;
+                    firstNumber = false;
+                }
+                else
+                    sum = checked(sum / number);
+            }
 
             return sum;
         }
