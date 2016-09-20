@@ -22,9 +22,9 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int SquareRoot(int number)
+        internal static double SquareRoot(int number)
         {
-            int sum = 0;
+            double sum = 0;
 
 
 

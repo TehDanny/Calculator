@@ -43,9 +43,9 @@ namespace CalculatorTest
         public void U_AdvancedCalculations_SquareRoot_AllDataOK_Sum()
         {
             // arange
-            int sum;
+            double sum;
             int number = 9;
-            int expectedResult = 3;
+            double expectedResult = 3;
 
             // act
             sum = AdvancedCalculations.SquareRoot(number);
