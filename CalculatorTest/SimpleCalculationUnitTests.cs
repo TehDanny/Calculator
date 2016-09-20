@@ -9,7 +9,7 @@ namespace CalculatorTest
     public class SimpleCalculationUnitTests
     {
         [TestMethod]
-        public void U_SimpleCalculations_Add_Int_AllDataOk_SumReturned()
+        public void U_SimpleCalculations_Add_Int_AllDataOk_Sum()
         {
             // arrange 
             int number1 = 5;
@@ -21,7 +21,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Add(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Add_List_AllDataOk_SumReturned()
+        public void U_SimpleCalculations_Add_List_AllDataOk_Sum()
         {
             // arrange 
             List<int> numberList = new List<int> { 3, 7, 5 };
@@ -51,7 +51,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Add(numberList);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -83,7 +83,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Substract_Int_AllDataOk_SumReturned()
+        public void U_SimpleCalculations_Substract_Int_AllDataOk_Sum()
         {
             // arrange 
             int number1 = 8;
@@ -95,7 +95,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Substract(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -114,7 +114,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Substract_List_AllDataOk_SumReturned()
+        public void U_SimpleCalculations_Substract_List_AllDataOk_Sum()
         {
             // arrange 
             List<int> numberList = new List<int> { 20, 5, 5 };
@@ -125,7 +125,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Substract(numberList);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -157,7 +157,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Multiply_AllDataOK_SumReturned()
+        public void U_SimpleCalculations_Multiply_AllDataOK_Sum()
         {
             // arrange
             int number1 = 3;
@@ -169,7 +169,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Multiply(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -203,7 +203,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Multiply_ListInt_AllDataOK_SumReturned()
+        public void U_SimpleCalculations_Multiply_ListInt_AllDataOK_Sum()
         {
             // arrange 
             List<int> numberlist = new List<int> { 2, 5, 3 };
@@ -214,11 +214,11 @@ namespace CalculatorTest
             sum = SimpleCalculations.Multiply(numberlist);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Divide_AllDataOK_SumReturned()
+        public void U_SimpleCalculations_Divide_AllDataOK_Sum()
         {
             // arrange
             int number1 = 25;
@@ -230,11 +230,11 @@ namespace CalculatorTest
             sum = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Divide_Int_AllDataOK_SumReturned2()
+        public void U_SimpleCalculations_Divide_Int_AllDataOK_Sum2()
         {
             // arrange
             int number1 = 5;
@@ -246,7 +246,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
@@ -265,7 +265,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Divide_Double_AllDataOK_SumReturned()
+        public void U_SimpleCalculations_Divide_Double_AllDataOK_Sum()
         {
             // arrange
             double number1 = 5;
@@ -277,11 +277,11 @@ namespace CalculatorTest
             sum = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Divide_ListInt_AllDataOK_SumReturned()
+        public void U_SimpleCalculations_Divide_ListInt_AllDataOK_Sum()
         {
             // arrange
             List<int> numberList = new List<int> { 100, 10, 2 };
@@ -292,7 +292,7 @@ namespace CalculatorTest
             sum = SimpleCalculations.Divide(numberList);
 
             // assert
-            Assert.AreEqual(sum, expectedResult);
+            Assert.AreEqual(expectedResult, sum);
         }
 
         [TestMethod]
