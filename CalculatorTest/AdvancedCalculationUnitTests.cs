@@ -54,5 +54,19 @@ namespace CalculatorTest
             Assert.AreEqual(expectedResult, sum);
         }
 
+        [TestMethod]
+        public void U_AdvancedCalculations_Solve_AllDataOK_X() // solve x, where x is unknown. Syntax is a string with "
+        {
+            // arange
+            string mathProblem = "3+x=10,x";
+            double expected;
+            double actual = 7;
+            // act
+            expected = AdvancedCalculations.Solve(mathProblem);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }

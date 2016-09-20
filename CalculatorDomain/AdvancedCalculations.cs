@@ -24,11 +24,12 @@ namespace CalculatorDomain
 
         internal static double SquareRoot(int number)
         {
-            double sum = 0;
+            throw new NotImplementedException();
+        }
 
-
-
-            return sum;
+        internal static double Solve(string mathProblem)
+        {
+            throw new NotImplementedException();
         }
     }
 }
