@@ -82,7 +82,6 @@ namespace CalculatorTest
 
             // assert
             Assert.AreEqual(expected, actual);
-            Assert.
         }
 
         [TestMethod]
