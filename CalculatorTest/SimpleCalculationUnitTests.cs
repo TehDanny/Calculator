@@ -308,5 +308,35 @@ namespace CalculatorTest
 
             // assert is handled by the ExpectedException
         }
+
+        [TestMethod]
+        public void U_SimpleCalculations_SwitchSign_PositiveNumber_NegativeNumber()
+        {
+            // arrange
+            int number = 5;
+            int actual;
+            int expected = -5;
+
+            // act
+            actual = SimpleCalculations.SwitchSign(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_SwitchSign_NegativeNumber_PositiveNumber()
+        {
+            // arrange
+            int number = -17;
+            int actual;
+            int expected = 17;
+
+            // act
+            actual = SimpleCalculations.SwitchSign(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

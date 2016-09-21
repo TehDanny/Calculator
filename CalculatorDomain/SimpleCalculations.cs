@@ -150,5 +150,14 @@ namespace CalculatorDomain
 
             return sum;
         }
+
+        internal static int SwitchSign(int number)
+        {
+            int switchedNumber;
+
+            switchedNumber = number * -1;
+
+            return switchedNumber;
+        }
     }
 }
