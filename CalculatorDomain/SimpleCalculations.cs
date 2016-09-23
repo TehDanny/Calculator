@@ -26,7 +26,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Add(List<int> numberList)
+        public static int Add(List<int> numberList)
         {
             int sum = 0;
 
@@ -48,7 +48,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Substract(int number1, int number2)
+        public static int Substract(int number1, int number2)
         {
             int sum = 0;
 
@@ -64,7 +64,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Substract(List<int> numberList)
+        public static int Substract(List<int> numberList)
         {
             int sum = 0;
             bool firstNumber = true;
@@ -86,7 +86,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Multiply(int number1, int number2)
+        public static int Multiply(int number1, int number2)
         {
             int sum;
 
@@ -95,7 +95,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Multiply(List<int> numberlist)
+        public static int Multiply(List<int> numberlist)
         {
             int sum = 0;
             bool firstNumber = true;
@@ -114,7 +114,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Divide(int number1, int number2)
+        public static int Divide(int number1, int number2)
         {
             int sum = 0;
 
@@ -123,7 +123,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static double Divide(double number1, double number2)
+        public static double Divide(double number1, double number2)
         {
             double sum = 0;
 
@@ -132,7 +132,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int Divide(List<int> numberList)
+        public static int Divide(List<int> numberList)
         {
             int sum = 0;
             bool firstNumber = true;
@@ -151,7 +151,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static int SwitchSign(int number)
+        public static int SwitchSign(int number)
         {
             int switchedNumber;
 

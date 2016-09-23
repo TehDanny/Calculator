@@ -10,7 +10,7 @@ namespace CalculatorDomain
 {
     public static class AdvancedCalculations
     {
-        internal static int Exponential(int number1, int number2)
+        public static int Exponential(int number1, int number2)
         {
             int sum = number1;
 
@@ -22,7 +22,7 @@ namespace CalculatorDomain
             return sum;
         }
 
-        internal static double SquareRoot(double number)
+        public static double SquareRoot(double number)
         {
             double root = number; // I chose this value, because the squareroot of 1 is 1
             double error = number - (root * root);
@@ -42,7 +42,7 @@ namespace CalculatorDomain
 
 
         /*
-        internal static double SquareRoot(double number)
+        public static double SquareRoot(double number)
         {
             return SquareRootRecursive(0, number, number);
         }
@@ -66,7 +66,7 @@ namespace CalculatorDomain
         }
         */
 
-        internal static double Solve(string mathProblem)
+        public static double Solve(string mathProblem)
         {
             throw new NotImplementedException();
         }
