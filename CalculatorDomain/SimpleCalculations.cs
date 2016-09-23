@@ -159,5 +159,14 @@ namespace CalculatorDomain
 
             return switchedNumber;
         }
+
+        public static int Modulus(int number1, int number2)
+        {
+            int remainder;
+
+            remainder = number1 % number2;
+
+            return remainder;
+        }
     }
 }

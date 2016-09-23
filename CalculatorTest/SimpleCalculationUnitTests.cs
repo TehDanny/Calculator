@@ -310,6 +310,38 @@ namespace CalculatorTest
         }
 
         [TestMethod]
+        public void U_SimpleCalculations_Modulus_int_AllDataOK_Remainder()
+        {
+            // arrange
+            int number1 = 10;
+            int number2 = 3;
+            int expected;
+            int actual = 1;
+
+            // act
+            expected = SimpleCalculations.Modulus(number1, number2);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void U_SimpleCalculations_Modulus_int_AllDataOK_Remainder2()
+        {
+            // arrange
+            int number1 = 9;
+            int number2 = 3;
+            int expected;
+            int actual = 0;
+
+            // act
+            expected = SimpleCalculations.Modulus(number1, number2);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void U_SimpleCalculations_SwitchSign_PositiveNumber_NegativeNumber()
         {
             // arrange
