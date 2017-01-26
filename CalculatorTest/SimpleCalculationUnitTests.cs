@@ -218,7 +218,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_SimpleCalculations_Divide_AllDataOK_Sum()
+        public void U_SimpleCalculations_Divide_AllDataOK_Sum1()
         {
             // arrange
             int number1 = 25;

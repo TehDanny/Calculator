@@ -8,7 +8,7 @@ namespace CalculatorTest
     public class AdvancedCalculationUnitTests
     {
         [TestMethod]
-        public void U_AdvancedCalculations_Exponentiel_AllDataOK_Sum()
+        public void U_AdvancedCalculations_Exponentiel_AllDataOK_Sum1()
         {
             // arange
             int sum;
@@ -40,7 +40,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void U_AdvancedCalculations_SquareRoot_AllDataOK_Sum()
+        public void U_AdvancedCalculations_SquareRoot_AllDataOK_Sum1()
         {
             // arange
             double sum;
@@ -98,5 +98,8 @@ namespace CalculatorTest
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        //[TestMethod]
+        //public void U_AdvancedCalculations_Sol
     }
 }
