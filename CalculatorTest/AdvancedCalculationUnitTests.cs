@@ -157,5 +157,49 @@ namespace CalculatorTest
 
             // assert is handled by the ExpectedException
         }
+
+        [TestMethod]
+        public void U_AdvancedCalculations_Sum_AllDataOK_Sum1()
+        {
+            // arange
+            int number = 4;
+            int actual;
+            int expected = 10;
+
+            // act
+            actual = AdvancedCalculations.Sum(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void U_AdvancedCalculations_Sum_AllDataOK_Sum2()
+        {
+            // arange
+            int number = 25;
+            int actual;
+            int expected = 325;
+
+            // act
+            actual = AdvancedCalculations.Sum(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void U_AdvancedCalculations_Sum_InvalidData_Exception()
+        {
+            // arange
+            int number = -5;
+            int actual;
+
+            // act
+            actual = AdvancedCalculations.Sum(number);
+
+            // assert is handled by the ExpectedException
+        }
     }
 }

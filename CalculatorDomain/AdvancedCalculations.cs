@@ -81,5 +81,16 @@ namespace CalculatorDomain
 
             return n * Factorial(n - 1);
         }
+
+        internal static int Sum(int n) // recursion
+        {
+            if (n < 0)
+                throw new ArgumentOutOfRangeException();
+
+            if (n == 0) // base case
+                return 0;
+
+            return n + Sum(n - 1);
+        }
     }
 }
