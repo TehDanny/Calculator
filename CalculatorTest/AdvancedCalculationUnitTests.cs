@@ -143,5 +143,19 @@ namespace CalculatorTest
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void U_AdvancedCalculations_Factorial_InvalidData_Exception()
+        {
+            // arange
+            int number = -5;
+            int expected;
+
+            // act
+            expected = AdvancedCalculations.Factorial(number);
+
+            // assert is handled by the ExpectedException
+        }
     }
 }

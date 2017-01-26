@@ -73,6 +73,9 @@ namespace CalculatorDomain
 
         internal static int Factorial(int n) // recursion
         {
+            if (n <= 0)
+                throw new ArgumentOutOfRangeException();
+
             if (n == 1) // base case
                 return 1;
 
