@@ -70,5 +70,13 @@ namespace CalculatorDomain
         {
             throw new NotImplementedException();
         }
+
+        internal static int Factorial(int n) // recursion
+        {
+            if (n == 1) // base case
+                return 1;
+
+            return n * Factorial(n - 1);
+        }
     }
 }

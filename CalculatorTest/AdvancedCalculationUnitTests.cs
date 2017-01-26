@@ -99,7 +99,49 @@ namespace CalculatorTest
             Assert.AreEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void U_AdvancedCalculations_Sol
+        [TestMethod]
+        public void U_AdvancedCalculations_Factorial_AllDataOK_Sum1()
+        {
+            // arange
+            int number = 4;
+            int expected;
+            int actual = 24;
+
+            // act
+            expected = AdvancedCalculations.Factorial(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void U_AdvancedCalculations_Factorial_AllDataOK_Sum2()
+        {
+            // arange
+            int number = 10;
+            int expected;
+            int actual = 3628800;
+
+            // act
+            expected = AdvancedCalculations.Factorial(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void U_AdvancedCalculations_Factorial_AllDataOK_Sum3()
+        {
+            // arange
+            int number = 1;
+            int expected;
+            int actual = 1;
+
+            // act
+            expected = AdvancedCalculations.Factorial(number);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
