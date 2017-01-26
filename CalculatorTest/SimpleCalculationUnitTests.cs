@@ -14,14 +14,14 @@ namespace CalculatorTest
             // arrange 
             int number1 = 5;
             int number2 = 5;
-            int sum;
-            int expectedResult = 10;
+            int actual;
+            int expected = 10;
 
             // act
-            sum = SimpleCalculations.Add(number1, number2);
+            actual = SimpleCalculations.Add(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -31,10 +31,10 @@ namespace CalculatorTest
             // arrange 
             int number1 = 2000000000;
             int number2 = 2000000000;
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Add(number1, number2);
+            actual = SimpleCalculations.Add(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -44,14 +44,14 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int> { 3, 7, 5 };
-            int sum;
-            int expectedResult = 15;
+            int actual;
+            int expected = 15;
             
             // act
-            sum = SimpleCalculations.Add(numberList);
+            actual = SimpleCalculations.Add(numberList);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -60,10 +60,10 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int> { 1000000000, 1000000000, 1000000000 };
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Add(numberList);
+            actual = SimpleCalculations.Add(numberList);
 
             // assert is handled by the ExpectedException
         }
@@ -74,10 +74,10 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int>();
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Add(numberList);
+            actual = SimpleCalculations.Add(numberList);
 
             // assert is handled by the ExpectedException
         }
@@ -88,14 +88,14 @@ namespace CalculatorTest
             // arrange 
             int number1 = 8;
             int number2 = 3;
-            int sum;
-            int expectedResult = 5;
+            int actual;
+            int expected = 5;
 
             // act
-            sum = SimpleCalculations.Substract(number1, number2);
+            actual = SimpleCalculations.Substract(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -105,10 +105,10 @@ namespace CalculatorTest
             // arrange 
             int number1 = -2000000000;
             int number2 = 2000000000;
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Substract(number1, number2);
+            actual = SimpleCalculations.Substract(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -118,14 +118,14 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int> { 20, 5, 5 };
-            int sum;
-            int expectedResult = 10;
+            int actual;
+            int expected = 10;
 
             // act
-            sum = SimpleCalculations.Substract(numberList);
+            actual = SimpleCalculations.Substract(numberList);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -134,10 +134,10 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int> { -1000000000, 1000000000, 1000000000 };
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Substract(numberList);
+            actual = SimpleCalculations.Substract(numberList);
 
             // assert is handled by the ExpectedException
         }
@@ -148,10 +148,10 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberList = new List<int>();
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Substract(numberList);
+            actual = SimpleCalculations.Substract(numberList);
 
             // assert is handled by the ExpectedException
         }
@@ -162,14 +162,14 @@ namespace CalculatorTest
             // arrange
             int number1 = 3;
             int number2 = 5;
-            int sum;
-            int expectedResult = 15;
+            int actual;
+            int expected = 15;
 
             // act
-            sum = SimpleCalculations.Multiply(number1, number2);
+            actual = SimpleCalculations.Multiply(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -179,10 +179,10 @@ namespace CalculatorTest
             // arrange 
             int number1 = 1000000000;
             int number2 = 1500000000;
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Multiply(number1, number2);
+            actual = SimpleCalculations.Multiply(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -194,10 +194,10 @@ namespace CalculatorTest
             // arrange 
             int number1 = -1000000000;
             int number2 = 1500000000;
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Multiply(number1, number2);
+            actual = SimpleCalculations.Multiply(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -207,14 +207,14 @@ namespace CalculatorTest
         {
             // arrange 
             List<int> numberlist = new List<int> { 2, 5, 3 };
-            int sum;
-            int expectedResult = 30;
+            int actual;
+            int expected = 30;
 
             // act
-            sum = SimpleCalculations.Multiply(numberlist);
+            actual = SimpleCalculations.Multiply(numberlist);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -223,14 +223,14 @@ namespace CalculatorTest
             // arrange
             int number1 = 25;
             int number2 = 5;
-            int sum;
-            int expectedResult = 5;
+            int actual;
+            int expected = 5;
 
             // act
-            sum = SimpleCalculations.Divide(number1, number2);
+            actual = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -239,14 +239,14 @@ namespace CalculatorTest
             // arrange
             int number1 = 5;
             int number2 = 2;
-            int sum;
-            int expectedResult = 2;
+            int actual;
+            int expected = 2;
 
             // act
-            sum = SimpleCalculations.Divide(number1, number2);
+            actual = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -256,10 +256,10 @@ namespace CalculatorTest
             // arrange
             int number1 = 25;
             int number2 = 0;
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Divide(number1, number2);
+            actual = SimpleCalculations.Divide(number1, number2);
 
             // assert is handled by the ExpectedException
         }
@@ -270,14 +270,14 @@ namespace CalculatorTest
             // arrange
             double number1 = 5;
             double number2 = 2;
-            double sum;
-            double expectedResult = 2.5;
+            double actual;
+            double expected = 2.5;
 
             // act
-            sum = SimpleCalculations.Divide(number1, number2);
+            actual = SimpleCalculations.Divide(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -285,14 +285,14 @@ namespace CalculatorTest
         {
             // arrange
             List<int> numberList = new List<int> { 100, 10, 2 };
-            int sum;
+            int actual;
             int expectedResult = 5;
 
             // act
-            sum = SimpleCalculations.Divide(numberList);
+            actual = SimpleCalculations.Divide(numberList);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expectedResult, actual);
         }
 
         [TestMethod]
@@ -301,10 +301,10 @@ namespace CalculatorTest
         {
             // arrange
             List<int> numberList = new List<int> { 100, 10, 0 };
-            int sum;
+            int actual;
 
             // act
-            sum = SimpleCalculations.Divide(numberList);
+            actual = SimpleCalculations.Divide(numberList);
 
             // assert is handled by the ExpectedException
         }
@@ -315,11 +315,11 @@ namespace CalculatorTest
             // arrange
             int number1 = 10;
             int number2 = 3;
-            int expected;
-            int actual = 1;
+            int actual;
+            int expected = 1;
 
             // act
-            expected = SimpleCalculations.Modulus(number1, number2);
+            actual = SimpleCalculations.Modulus(number1, number2);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -331,11 +331,11 @@ namespace CalculatorTest
             // arrange
             int number1 = 9;
             int number2 = 3;
-            int expected;
-            int actual = 0;
+            int actual;
+            int expected = 0;
 
             // act
-            expected = SimpleCalculations.Modulus(number1, number2);
+            actual = SimpleCalculations.Modulus(number1, number2);
 
             // assert
             Assert.AreEqual(expected, actual);

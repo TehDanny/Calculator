@@ -11,47 +11,47 @@ namespace CalculatorTest
         public void U_AdvancedCalculations_Exponentiel_AllDataOK_Sum1()
         {
             // arange
-            int sum;
             int number1 = 3;
             int number2 = 2;
-            int expectedResult = 9;
+            int actual;
+            int expected = 9;
 
             // act
-            sum = AdvancedCalculations.Exponential(number1, number2);
+            actual = AdvancedCalculations.Exponential(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void U_AdvancedCalculations_Exponentiel_AllDataOK_Sum2()
         {
             // arange
-            int sum;
             int number1 = 3;
             int number2 = 3;
-            int expectedResult = 27;
+            int actual;
+            int expected = 27;
 
             // act
-            sum = AdvancedCalculations.Exponential(number1, number2);
+            actual = AdvancedCalculations.Exponential(number1, number2);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void U_AdvancedCalculations_SquareRoot_AllDataOK_Sum1()
         {
             // arange
-            double sum;
             double number = 9;
-            double expectedResult = 3;
+            double actual;
+            double expected = 3;
 
             // act
-            sum = AdvancedCalculations.SquareRoot(number);
+            actual = AdvancedCalculations.SquareRoot(number);
 
             // assert
-            Assert.AreEqual(expectedResult, sum);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -89,11 +89,11 @@ namespace CalculatorTest
         {
             // arange
             string mathProblem = "3+x=10,x";
-            double expected;
-            double actual = 7;
+            double actual;
+            double expected = 7;
 
             // act
-            expected = AdvancedCalculations.Solve(mathProblem);
+            actual = AdvancedCalculations.Solve(mathProblem);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -104,11 +104,11 @@ namespace CalculatorTest
         {
             // arange
             int number = 4;
-            int expected;
-            int actual = 24;
+            int actual;
+            int expected = 24;
 
             // act
-            expected = AdvancedCalculations.Factorial(number);
+            actual = AdvancedCalculations.Factorial(number);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -119,11 +119,11 @@ namespace CalculatorTest
         {
             // arange
             int number = 10;
-            int expected;
-            int actual = 3628800;
+            int actual;
+            int expected = 3628800;
 
             // act
-            expected = AdvancedCalculations.Factorial(number);
+            actual = AdvancedCalculations.Factorial(number);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -134,11 +134,11 @@ namespace CalculatorTest
         {
             // arange
             int number = 1;
-            int expected;
-            int actual = 1;
+            int actual;
+            int expected = 1;
 
             // act
-            expected = AdvancedCalculations.Factorial(number);
+            actual = AdvancedCalculations.Factorial(number);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -150,10 +150,10 @@ namespace CalculatorTest
         {
             // arange
             int number = -5;
-            int expected;
+            int actual;
 
             // act
-            expected = AdvancedCalculations.Factorial(number);
+            actual = AdvancedCalculations.Factorial(number);
 
             // assert is handled by the ExpectedException
         }
